@@ -15,7 +15,7 @@
     <script src = "https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
 
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <script src="map.js"></script>
+    <script type="module" src="map.js"></script>
 </head>
 <body>
     <!-- ロード -->
@@ -27,13 +27,13 @@
 
     <!-- ボタン -->
     <div class="tab-wrap">
-       <input id="TAB-01" type="checkbox" name="TAB" class="tab-switch_left" onclick="onClicked(id)"/>
+       <input id="TAB-01" type="checkbox" name="TAB" class="tab-switch_left"/>
         <label class="tab-label_left" id="btn_left" for="TAB-01"></label>
         
-        <input id="TAB-02" type="checkbox" name="TAB" class="tab-switch_center" onclick="onClicked(id)"/>
+        <input id="TAB-02" type="checkbox" name="TAB" class="tab-switch_center"/>
         <label class="tab-label_center" id="btn_center" for="TAB-02"></label>
         
-        <input id="TAB-03" type="checkbox" name="TAB" class="tab-switch_right" onclick="onClicked(id)"/>
+        <input id="TAB-03" type="checkbox" name="TAB" class="tab-switch_right"/>
         <label class="tab-label_right" id="btn_right" for="TAB-03"></label>
         
     </div>
